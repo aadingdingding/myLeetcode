@@ -1,5 +1,33 @@
 ## Oct 27th - Arrays: Sliding Window
 ### Solved problems
+* [59.spiral-matrix-ii](./arrays/spiral_matrix/59.spiral-matrix-ii.py)
+* [76.spiral-matrix](./arrays/spiral_matrix/54.spiral-matrix.py)
+### Summary
+#### algrithom learning
+We need to explicitly set up start/end column/row numbers as boundry. Be careful with the edge case when:  
+1. start and end pointer value equals  
+2. when the matrix is square, it's easier. When the matrix is reatangle, we need to be careful with boundry to make sure we don't revisit back.
+#### python learning
+* how to create a list: `arr = [0] * 5`.
+* how to create a list of list:  
+We cannot simply use `arr = [[0]] * 5` because all of list in arr is actually pointing to the same memory location (you can use `id()` to check memory location).  
+1. simple for-loop:  
+```
+arr = []
+for i in range(5):
+    inner_arr = [0]
+    arr.append(inner_arr)
+```
+2. list comprehension:  `arr = [[0] for _ in range(5)]`
+3. numpy package:  
+```
+import numpy as np
+lists = np.empty((10, 0)).tolist()
+print(lists)
+# [[], [], [], [], [], [], [], [], [], []]
+```
+## Oct 27th - Arrays: Sliding Window
+### Solved problems
 * [76.minimum-window-substring](./arrays/sliding_window/76.minimum-window-substring.py)
 * [209.minimum-size-subarray-sum](/arrays/sliding_window/209.minimum-size-subarray-sum.py)
 * [904.fruit-into-baskets](./arrays/sliding_window/904.fruit-into-baskets.py)
