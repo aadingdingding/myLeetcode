@@ -1,4 +1,5 @@
-## Oct 27th - Arrays: Sliding Window
+
+## Nov 7th - Arrays: Spiral Matrix
 ### Solved problems
 * [59.spiral-matrix-ii](./arrays/spiral_matrix/59.spiral-matrix-ii.py)
 * [76.spiral-matrix](./arrays/spiral_matrix/54.spiral-matrix.py)
